@@ -1,0 +1,38 @@
+footer {
+    display: block;
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: inline-flex;
+    margin: auto;
+    line-height: 50px;
+    list-style-type: none;
+}
+
+footer span {
+    color: #fff;
+    font-size: 22px;
+}
+
+.footer-links li {
+    margin: 0 20px;
+}
+
+.footer-links li a {
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-links li a:hover {
+    color: rgb(255, 209, 4);
+    box-shadow: 0px 20px 10px -12px rgb(255, 209, 4);
+}

@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="css/registration.css">
+
+<div id="registration-container" class="hidden">
+
+    <div class="registration-box" id="registration-box">
+        <h2>REGISTER</h2><br>
+        <ul>
+        {{#each msg}}
+        <li class="reg-msg">{{this}}</p>
+        <script>
+             document.getElementById("registration-container").classList.remove("hidden");
+             setTimeout(()=>{document.getElementById("registration-container").classList.add("hidden");   },1000);         
+        </script>        
+        {{/each}}
+        </ul>
+        <form action="/" method="POST">
+
+            <input type="email" name="email" placeholder="Email:" required><br>
+            <input type="text" name="f_name" placeholder="First Name:" required><br>
+            <input type="text" name="l_name" placeholder="Last Name:" required><br>
+            <input type="password" name="password" placeholder="Password: " required><br>
+
+            <h2>Birthday
+            </h2><br>
+            <p>To sign up, you need to be at least 18. Other people who use Airbnb won’t see your birthday.</p><br>
+
+
+            <select name="bmonth" id="age-month" required>
+                <option value="">Month</option>
+                {{#each months}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+            <select name="bday" id="age-day" required>
+                <option value="">Day</option>
+                {{#each days}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+            <select name="byear" id="age-year" required>
+                <option value="">Year</option>
+                {{#each years}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+
+            </select><br>
+            <input type="hidden" name="page" id="page" value="">
+            <input type="submit" name="register" value="Register" id="register">
+
+
+        </form>
+    </div>
+
+</div>

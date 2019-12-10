@@ -1,0 +1,110 @@
+ /*-----------Registration----------------*/
+ 
+ #registration-container {
+     z-index: 99;
+     position: fixed;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+     background-color: rgba(0, 0, 0, 0.5);
+ }
+ 
+ .hidden {
+     visibility: hidden;
+ }
+ 
+ .body-hidden {
+     overflow: hidden;
+ }
+ 
+ .registration-box {
+     top: 10%;
+     position: relative;
+     color: white;
+     border-radius: 20px;
+     background: rgba(255, 255, 255, 0.8);
+     max-width: 400px;
+     min-height: 500px;
+     margin: auto;
+     padding-top: 40px;
+ }
+ 
+ .registration-box h2 {
+     color: #000;
+     text-align: center;
+     font-weight: 100;
+ }
+ 
+ .registration-box p {
+     color: #000;
+     font-size: 18px;
+     margin: 0 20px;
+ }
+ 
+ .registration-box form {
+     margin: auto;
+     text-align: center;
+ }
+ 
+ .registration-box form>input {
+     width: 90%;
+     height: 30px;
+     margin: 10px 0;
+     font-size: 18px;
+ }
+ 
+ .registration-box form>select {
+     height: 30px;
+     font-size: 18px;
+ }
+ 
+ #age-month {
+     width: 39%;
+ }
+ 
+ #age-day,
+ #age-year {
+     width: 25%;
+ }
+ 
+ #registration-box>form>input[type=submit]:nth-child(17) {
+     background: #000;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+ }
+ 
+ #registration-box>form>input[type=submit]:nth-child(17):hover {
+     background: rgb(255, 209, 4);
+     transition: 0.5s;
+ }
+ 
+ .reg-msg {
+     padding: 0 20px;
+     color: #000 !important;
+     font-size: 20px;
+ }
+ 
+ @media only screen and (max-width: 600px) {
+     #registration-container {
+         width: 100%;
+         height: 100%;
+     }
+     .registration-box {
+         top: 10%;
+         border-radius: 20px;
+         background: rgba(255, 255, 255, 0.8);
+         max-width: 60%;
+         min-height: 400px;
+         margin: 0 20%;
+         padding-top: 40px;
+     }
+     #age-month {
+         width: 39%;
+     }
+     #age-day,
+     #age-year {
+         width: 25%;
+     }
+ }

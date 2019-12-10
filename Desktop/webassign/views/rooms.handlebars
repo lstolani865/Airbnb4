@@ -1,0 +1,42 @@
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/room.css">
+{{> header}}
+
+<div id="registration-container" class="hidden"></div>
+<div class="rooms-content">
+    <div class="rooms-container">
+        <span>Enter dates and number of guests to see the total price per night. Tourism taxes may be added. (Refresh to
+            reset)</span>
+
+        {{#if info}}
+        <br><span>Booking form info: <br>
+            Where: {{info.where}}<br>
+            Check In: {{info.checkIn}}<br>
+            Check Out: {{info.checkOut}}<br>
+            Guests: {{info.guests}}</span>
+        {{else}}
+        <br><span>Guests: 1</span>
+        {{/if}}
+
+
+        <hr>
+        <div class="rooms-grid">
+            {{#each rooms}}
+            <a class="room-links" href="">
+                <div class="room">
+                    <div class="box-img">
+                        <img class="room-img" src="img/{{this.img}}" alt="Teste">
+                    </div>
+                    <h2 class="room-title">{{this.title}}</h2>
+                    <h2 class="room-price">Per night: $ {{this.price}}/Night</h2>
+                </div>
+            </a>
+            {{/each}}
+
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("page").value = "rooms";
+</script>

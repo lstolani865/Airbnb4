@@ -1,0 +1,82 @@
+        @font-face {
+            font-family: "Old London";
+            src: url(font/OldLondon.ttf) format("truetype");
+        }
+        
+        @font-face {
+            font-family: "Enchanted Land";
+            src: url(font/EnchantedLand.otf) format("truetype");
+        }
+        
+        html,
+        body,
+        nav,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        span,
+        div {
+            font-family: "Enchanted Land", Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            top: 0;
+        }
+        /*-------------HOME------------*/
+        
+        .book-container,
+        .home-info {
+            max-width: 100%;
+            height: 100vh;
+            background: url(/img/background.jpg);
+            background-position: center;
+            background-size: cover;
+            left: 0px;
+            top: 0px;
+            margin: 0;
+        }
+        
+        .promo-box {
+            width: 100%;
+            height: 300px;
+            background: url(/img/vancouver.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .home-info {
+            background: url(/img/background-info.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 700px;
+            padding-top: 100px;
+        }
+        
+        .info-box {
+            background: url(/img/info.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-height: 340px;
+            max-width: 540px;
+            margin: auto;
+            padding: 100px;
+        }
+        
+        .info-box p {
+            font-size: 34px;
+            text-align: center;
+        }
+        /*--------------FORM----------------*/
+        /*-----------------------------*/
+        
+        @media only screen and (max-width: 600px) {
+            .home-info {
+                width: 100%;
+            }
+        }

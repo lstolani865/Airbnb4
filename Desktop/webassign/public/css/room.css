@@ -1,0 +1,85 @@
+/*------------ROOMS------------*/
+
+.rooms-container {
+    position: relative;
+    max-width: 1048px;
+    min-height: 1000px;
+    margin: auto;
+}
+
+.rooms-container span {
+    font-size: 26px;
+}
+
+.rooms-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 610px;
+    line-height: 50%;
+    width: 100%;
+}
+
+.room {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 100%;
+    height: 320px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.room-img {
+    transition: 0.5s;
+    max-height: 220px;
+}
+
+.room-img:hover {
+    transform: scale(1.2);
+}
+
+.room-title,
+.room-price {
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+    font-weight: 100;
+    text-align: left;
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.room-links {
+    text-decoration: none;
+}
+
+span {
+    margin: 30px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+.rooms-content {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    background: url(/img/room-background.jpg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .rooms-container {
+        height: 1400px;
+    }
+    .rooms-grid {
+        grid-template-columns: 50% 50%;
+    }
+}

@@ -1,0 +1,154 @@
+.box-img {
+    max-height: 220px;
+    max-width: 98%;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.book-box {
+    position: relative;
+    top: 10vh;
+    left: 10%;
+    max-width: 400px;
+    height: 50%;
+    padding: 100px 50px;
+    background: url(/img/board.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-box {
+    position: relative;
+    margin: auto 5%;
+    max-height: 100%;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 50px 10px;
+}
+
+.errMsg {
+    padding: 0 20px;
+    color: red;
+    font-size: 22px;
+}
+
+.form-box h2 {
+    text-align: center;
+    font-size: 26px;
+    color: black;
+    font-weight: 100;
+}
+
+#book-form {
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    height: auto;
+}
+
+#book-form label {
+    font-size: 26px;
+}
+
+#book-where {
+    width: 83%;
+    height: 30px;
+}
+
+.book-date {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+}
+
+#select-box {
+    width: 300px;
+    height: auto;
+}
+
+#guests {
+    width: 83%;
+    height: 30px;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
+#book-submit {
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    color: #000;
+    background: rgb(255, 209, 4);
+    border: none;
+    margin: 5px;
+    margin-right: 28px;
+    float: right;
+    font-family: "Enchanted Land", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+#book-submit:hover {
+    color: #fff;
+    background: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    /*FORM*/
+    .book-container {
+        padding: 0;
+    }
+    .form-box {
+        width: 90%;
+    }
+    .book-box {
+        position: relative;
+        top: 100px;
+        width: 200px;
+        height: 80%;
+        padding: 5%;
+        margin: auto;
+    }
+    .form-box h2 {
+        text-align: center;
+        font-size: 22px;
+        color: black;
+        font-weight: 100;
+    }
+    #book-form {
+        max-width: 280px;
+    }
+    #book-form label {
+        font-size: 22px;
+        width: 90%;
+    }
+    #book-submit {
+        float: none;
+        font-size: 20px;
+    }
+    #book-where {
+        width: 83%;
+        height: 30px;
+    }
+    .book-date {
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        width: 40%;
+    }
+    #select-box {
+        width: 83%;
+        height: auto;
+    }
+    #guests {
+        width: 83%;
+        height: 30px;
+    }
+}

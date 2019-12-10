@@ -1,0 +1,37 @@
+<nav class="nav-menu">
+    <a href=""><img src="img/logo.png" class="img-logo" alt="AirbnWinter"></a>
+    <ul>
+        <li class="nav-menu-links"><a href="/">Home</a></li>
+        <li class="nav-menu-links"><a href="/rooms">Room Listing</a></li>
+        <li class="nav-menu-links"><button type="submit" name="registration"
+                onclick="registration()">Registration</button> </li>
+    </ul>
+</nav>
+
+{{>registration}}
+
+<script>
+    var registBox = document.getElementById("registration-container");
+    var box = document.getElementById("registration-box");
+    var registStatus = false;
+    document.addEventListener("click", (event) => {
+        if (event.target == registBox)
+            registration();
+    });
+
+    
+    function registration() {
+
+        var body = document.body;
+        registStatus = !registStatus;
+        var registBox = document.getElementById("registration-container");
+        if (registStatus) {
+            var registBox = document.getElementById("registration-container");
+            registBox.classList.remove("hidden");
+            body.classList.add("body-hidden");
+        } else {
+            registBox.classList.add("hidden");
+            body.classList.remove("body-hidden");
+        }
+    }
+</script>
